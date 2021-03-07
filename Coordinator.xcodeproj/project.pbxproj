@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		13AC1959252CAE1300222BE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AC1958252CAE1300222BE2 /* AppDelegate.swift */; };
-		13AC195B252CAE1300222BE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AC195A252CAE1300222BE2 /* SceneDelegate.swift */; };
 		13AC195D252CAE1300222BE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AC195C252CAE1300222BE2 /* ViewController.swift */; };
 		13AC1960252CAE1300222BE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13AC195E252CAE1300222BE2 /* Main.storyboard */; };
 		13AC1962252CAE1600222BE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13AC1961252CAE1600222BE2 /* Assets.xcassets */; };
 		13AC1965252CAE1600222BE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13AC1963252CAE1600222BE2 /* LaunchScreen.storyboard */; };
+		13AC196D252CAFDF00222BE2 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AC196C252CAFDF00222BE2 /* Coordinator.swift */; };
+		13AC196F252CB33F00222BE2 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AC196E252CB33F00222BE2 /* Storyboarded.swift */; };
+		13AC1971252CBB5300222BE2 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AC1970252CBB5300222BE2 /* MainCoordinator.swift */; };
+		13AC1977252D085800222BE2 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AC1976252D085800222BE2 /* CreateAccountViewController.swift */; };
+		13AC1979252D087400222BE2 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AC1978252D087400222BE2 /* BuyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,11 @@
 		13AC1961252CAE1600222BE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13AC1964252CAE1600222BE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13AC1966252CAE1600222BE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13AC196C252CAFDF00222BE2 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		13AC196E252CB33F00222BE2 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		13AC1970252CBB5300222BE2 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		13AC1976252D085800222BE2 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		13AC1978252D087400222BE2 /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +65,18 @@
 		13AC1957252CAE1300222BE2 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				13AC1970252CBB5300222BE2 /* MainCoordinator.swift */,
 				13AC1958252CAE1300222BE2 /* AppDelegate.swift */,
+				13AC196C252CAFDF00222BE2 /* Coordinator.swift */,
+				13AC196E252CB33F00222BE2 /* Storyboarded.swift */,
 				13AC195A252CAE1300222BE2 /* SceneDelegate.swift */,
 				13AC195C252CAE1300222BE2 /* ViewController.swift */,
 				13AC195E252CAE1300222BE2 /* Main.storyboard */,
 				13AC1961252CAE1600222BE2 /* Assets.xcassets */,
 				13AC1963252CAE1600222BE2 /* LaunchScreen.storyboard */,
 				13AC1966252CAE1600222BE2 /* Info.plist */,
+				13AC1976252D085800222BE2 /* CreateAccountViewController.swift */,
+				13AC1978252D087400222BE2 /* BuyViewController.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -94,7 +108,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Pablo Tamayo";
 				TargetAttributes = {
 					13AC1954252CAE1300222BE2 = {
@@ -138,9 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13AC196D252CAFDF00222BE2 /* Coordinator.swift in Sources */,
+				13AC1971252CBB5300222BE2 /* MainCoordinator.swift in Sources */,
+				13AC1979252D087400222BE2 /* BuyViewController.swift in Sources */,
 				13AC195D252CAE1300222BE2 /* ViewController.swift in Sources */,
+				13AC196F252CB33F00222BE2 /* Storyboarded.swift in Sources */,
 				13AC1959252CAE1300222BE2 /* AppDelegate.swift in Sources */,
-				13AC195B252CAE1300222BE2 /* SceneDelegate.swift in Sources */,
+				13AC1977252D085800222BE2 /* CreateAccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +210,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -252,6 +271,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

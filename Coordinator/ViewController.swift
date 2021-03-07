@@ -8,11 +8,25 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, Storyboarded {
+    
+    weak var coordinator: MainCoordinator?
+    
+    @IBAction func buyTapped(_ sender: Any) {
+        coordinator?.buySubscription()      // coordinator is now nil, why?
+    }
+    @IBAction func createAccountTapped(_ sender: Any) {
+        coordinator?.createAccount()
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    deinit {
+        print("existing ViewController")
     }
 
 
